@@ -97,7 +97,8 @@
       color: #ccc;
     }
     
-      body {
+  /* Kayan yazı style */
+ body {
     margin: 0;
     height: 100vh;
     font-family: Arial, sans-serif;
@@ -110,49 +111,58 @@
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background: #e74c3c; /* Kırmızı */
+    background: #e74c3c;
     color: white;
-    padding: 12px 18px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     font-weight: bold;
     z-index: 1000;
-    animation: fadeInUp 0.5s ease forwards;
-    white-space: nowrap;       /* Tek satır */
-    max-width: 90vw;           /* Mobilde ekran genişliğine uyum */
+    width: 90vw;
+    max-width: 600px;
     overflow: hidden;
-    text-overflow: ellipsis;   /* Taşarsa "..." göster */
+    white-space: nowrap;
+    padding: 12px 0;
+
+    animation: fadeInOut 12s linear forwards;
   }
 
-  @keyframes fadeInUp {
-    from {
+  #alertText {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+  }
+
+  @keyframes fadeInOut {
+    0% {
       opacity: 0;
-      transform: translateX(-50%) translateY(20px);
     }
-    to {
+    10% {
       opacity: 1;
-      transform: translateX(-50%) translateY(0);
     }
-  }
-
-  @keyframes fadeOutDown {
-    from {
+    83% {
       opacity: 1;
-      transform: translateX(-50%) translateY(0);
     }
-    to {
+    100% {
       opacity: 0;
-      transform: translateX(-50%) translateY(20px);
     }
   }
 
-  /* Mobil ekranlarda yazı küçülür */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
   @media (max-width: 480px) {
     #alertBalloon {
       font-size: 0.9rem;
-      padding: 10px 14px;
+      max-width: 90vw;
     }
   }
+
     
   </style>
 </head>
@@ -327,7 +337,9 @@
     });
   </script>
   
-  <div id="alertBalloon">Boyner App kurulu ise Explore butonu ürüne yönlendirmeyebilir.</div>
+<div id="alertBalloon">
+  <div id="alertText">📢 Boyner App kurulu ise Explore butonu ürüne yönlendirmeyebilir.</div>
+</div>
 
 <script>
   const balloon = document.getElementById('alertBalloon');
