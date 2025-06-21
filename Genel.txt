@@ -1,11 +1,12 @@
-1 Transfer_listesi_yok
-2 Transfer_listesi_yok
-3 Transfer_listesi_yok
-4 Transfer_listesi_yok
-5 Transfer_listesi_yok
-6 Transfer_listesi_yok
-7 Transfer_listesi_yok
-8 Transfer_listesi_yok
-9 Transfer_listesi_yok
+1 Tks/İks_referans_dosyası_yok
+2 Tks/İks_referans_dosyası_yok
+3 Tks/İks_referans_dosyası_yok
+4 Tks/İks_referans_dosyası_yok
+5 Tks/İks_referans_dosyası_yok
+6 Tks/İks_referans_dosyası_yok
+7 Tks/İks_referans_dosyası_yok
+8 Tks/İks_referans_dosyası_yok
+9 Tks/İks_referans_dosyası_yok
+
 
 
