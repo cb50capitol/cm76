@@ -96,6 +96,52 @@
       background: rgba(255, 255, 255, 0.05);
       color: #ccc;
     }
+    
+     body {
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    position: relative;
+  }
+
+  #alertBalloon {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #e74c3c; /* Kırmızı */
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-weight: bold;
+    z-index: 1000;
+    animation: fadeInUp 0.5s ease forwards;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateX(-50%) translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+  }
+
+  @keyframes fadeOutDown {
+    from {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-50%) translateY(20px);
+    }
+  }
+    
   </style>
 </head>
 <body>
@@ -268,5 +314,17 @@
       window.open(whatsappUrl, '_blank');
     });
   </script>
+  
+  <div id="alertBalloon">Boyner App kurulu ise Explore butonu yönlendirmeyebilir.</div>
+
+<script>
+  const balloon = document.getElementById('alertBalloon');
+
+  setTimeout(() => {
+    balloon.style.animation = 'fadeOutDown 0.5s forwards';
+    setTimeout(() => balloon.style.display = 'none', 500);
+  }, 4000);
+</script>
+
 </body>
 </html>
