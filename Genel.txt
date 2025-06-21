@@ -1,4 +1,11 @@
-1 Transfer_listesi_yüklü_değil
-2 Transfer_listesi_yüklü_değil
-3 Transfer_listesi_yüklü_değil
+1 Transfer_listesi_yok
+2 Transfer_listesi_yok
+3 Transfer_listesi_yok
+4 Transfer_listesi_yok
+5 Transfer_listesi_yok
+6 Transfer_listesi_yok
+7 Transfer_listesi_yok
+8 Transfer_listesi_yok
+9 Transfer_listesi_yok
+
 
