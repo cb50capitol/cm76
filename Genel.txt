@@ -1,12 +1,9 @@
-1 Tks/İks_referans_dosyası_yok
-2 Tks/İks_referans_dosyası_yok
-3 Tks/İks_referans_dosyası_yok
-4 Tks/İks_referans_dosyası_yok
-5 Tks/İks_referans_dosyası_yok
-6 Tks/İks_referans_dosyası_yok
-7 Tks/İks_referans_dosyası_yok
-8 Tks/İks_referans_dosyası_yok
-9 Tks/İks_referans_dosyası_yok
-
-
-
+1 Tks.liste.yok
+2 Tks.liste.yok
+3 Tks.liste.yok
+4 Tks.liste.yok
+5 Tks.liste.yok
+6 Tks.liste.yok
+7 Tks.liste.yok
+8 Tks.liste.yok
+9 Tks.liste.yok
