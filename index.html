@@ -64,7 +64,7 @@
 </head>
 <body>
   <div class="container">
-    <h1># BridGe.</h1>
+    <h1># Cadde.</h1>
     <div class="search-container">
       <input type="text" id="searchInput" placeholder="# Search" inputmode="numeric" pattern="[0-9]*" />
       <button id="searchButton" type="button" title="Ara">
@@ -193,7 +193,7 @@
     }
 
     function showRefSelector(){
-      const files=['Genel.txt','Aybars.txt','OsmanB.txt','Berkay.txt','OsmanG.txt','Berkant.txt','Faruk.txt','Ferhat.txt'];
+      const files=['Genel.txt'];
       document.getElementById('modalTitle').textContent='Referans Dosyası Seçimi';
       modalBody.innerHTML = `
         <div style="display: flex; flex-direction: column; gap: 0.5em;">
@@ -214,4 +214,6 @@
     window.addEventListener('click',e=>{ if(e.target===modal) modal.style.display='none'; });
   </script>
 </body>
+
+Test
 </html>
