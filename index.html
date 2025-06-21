@@ -6,7 +6,7 @@
   <title>WormHole</title>
   <style>
     body { font-family: Arial,sans-serif; margin:0; padding:1em; background:#f5f5f5; color:#222; transition:background .5s,color .5s;}
-    .container { max-width:600px; margin:auto; background:#fff; padding:2em; border-radius:12px; box-shadow:0 0 10px rgba(0,0,0,0.1); }
+    .container { max-width:600px; margin:auto; background:#fff; padding:2em; border-radius:12px; box-shadow:0 0 10px rgba(0,0,0,0.1); position:relative; }
     h1 { text-align:center; font-size:1.5em; cursor:pointer; margin:0; }
 
     .search-container { position:relative; margin-top:1em; }
@@ -60,6 +60,23 @@
     #modalBody th { background:#eee; width:30%; }
     body.dark-mode #modalBody th { background:#444; color:#ddd; }
     body.dark-mode #modalBody td { border-color:#555; }
+
+    /* 🔽 EKLENDİ: Köşe notu stili */
+    .corner-note {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      font-size: 0.9em;
+      color: #999;
+      background: rgba(0, 0, 0, 0.05);
+      padding: 0.4em 0.8em;
+      border-radius: 6px;
+      pointer-events: none;
+    }
+    body.dark-mode .corner-note {
+      background: rgba(255, 255, 255, 0.05);
+      color: #ccc;
+    }
   </style>
 </head>
 <body>
@@ -78,6 +95,9 @@
       </div>
       <ul id="historyList"></ul>
     </div>
+
+    <!-- 🔽 EKLENDİ: Köşe notu --><br>
+    <div class="corner-note">info: engin.karademir@boyner.com.tr</div>
   </div>
 
   <div id="modal" role="dialog" tabindex="-1">
