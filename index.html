@@ -297,7 +297,7 @@
         inv.textContent='Section'; inv.className='inventory-button';
         inv.onclick=()=> showInModal(code);
         const go=document.createElement('button');
-        go.textContent='Explore'; go.className='go-button';
+        go.textContent='Online'; go.className='go-button';
         go.onclick=()=> {
           if(code.length>=10) window.open(`https://www.boyner.com.tr/search?q=${code.slice(0,-3)}`, '_blank');
           else showAlert('Veri bulunamadı.','Bilgi');
@@ -338,7 +338,7 @@
   </script>
   
 <div id="alertBalloon">
-  <div id="alertText">📢 Boyner App kurulu ise Explore butonu ürüne yönlendirmeyebilir.</div>
+  <div id="alertText">📢 Boyner App kurulu ise Online butonu ürüne yönlendirmeyebilir.</div>
 </div>
 
 <script>
